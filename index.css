@@ -1,0 +1,585 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.nave-container{
+  position: fixed;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-bottom: 1px solid #f1f1f1;
+  z-index: 5;
+  top: 0;
+  box-shadow: 0px 7px 30px -20px;
+}
+
+
+@media screen and (max-width:1200px){
+  .nave-container{
+    display: none;
+  }
+}
+
+.naveebar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  position: relative;
+  padding: 0px 5%;
+
+}
+
+.liste{
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0px;
+}
+
+.liste li a{
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.mega-menu{
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 350px;
+  top: 61px;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 1;
+  padding: 30px 3%;
+  display: none;
+}
+
+.mega-liste h1{
+  font-size: 23px;
+  width: 200px;
+  font-weight: 100;
+  margin-right: 42px;
+}
+
+
+
+
+
+.mega-liste{
+  display: flex;
+
+}
+.mega-listecontent{
+  width: 500px;
+  border: 1px solid #dadada;
+}
+
+.mega-listecontent ul{
+padding: 0px;
+}
+
+.mega-listecontent ul li {
+  border-bottom: 1px solid #dadada;
+  list-style-type: none;
+}
+
+.mega-listecontent ul li a{
+  display: block;
+  color: rgb(90, 90, 90);
+}
+
+.mega-listecontent ul li a:hover{
+  background-color: #dff5ef;
+  color: green;
+}
+
+
+.naveebar ul li:hover .mega-menu,.firstlist-content{
+  display: block;
+}
+
+/*
+the styling for the products menu starts here */
+
+.firstlist{
+  width: 200px;
+  position: relative;
+
+}
+.firstlist ul{
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  text-align: right;
+}
+
+.firstlist ul li a{
+  color: gray;
+}
+
+.firstlist-two ul li a{
+font-size: 13px;
+color: black;
+display: block;
+padding: 6px;
+}
+
+.firstlist-content{
+  position: absolute;
+  left: 180px;
+  top: 0;
+  display: none;
+}
+
+.firstlist-twosub{
+  display: flex;
+  text-align: left;
+  padding-left: 50px;
+  width: 100%;
+  justify-content: center;
+}
+
+.firstlist-two-content{
+  width: 270px;
+  padding: 20px;
+  border-right: 1px solid #c5c5c5;
+}
+
+.firstlist-two-content h3{
+  font-size: 13px;
+}
+
+.firstlist-two-content  p{
+font-size: 12px;
+padding: 0px;
+}
+
+.firstlist-content1{
+  display: none;
+  position: absolute;
+  left: 180px;
+  top: 0;
+}
+
+.firstlist-two ul li:hover .firstlist-content1{
+  display: block;
+}
+
+
+
+
+/* the styling for the promo dropdown starts here */
+.mega-listecontent-pro{
+  width: 350px;
+  border: 1px solid #dadada;
+  margin-right: 20px;
+}
+
+.mega-listecontent-pro p{
+  padding: 10px;
+}
+
+.mega-liste-pro{
+  display: flex;
+}
+
+.mega-liste-pro h1{
+  font-size: 23px;
+  width: 200px;
+  font-weight: 100;
+  margin-right: 42px;
+  border-right: 1px solid #dadada;
+
+}
+
+.carousels{
+margin-top: 35px;
+}
+
+@media screen and (max-width:1200px){
+  .carousels{
+    margin-top: 0px;
+  }
+}
+
+@media screen and (max-width:700px){
+  .carousels{
+    margin-top: 70px;
+  }
+}
+
+/* the icons container stars here */
+
+
+
+.icon-tab{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding: 20px;
+  height: 150px;
+}
+
+@media screen and (max-width:700px){
+  .icon-tab{
+display: none;
+  }
+}
+
+.icon-tab div{
+  width: 250px;
+border-right: 1px solid rgb(231, 231, 231);
+padding: 10px;
+}
+
+.icon-tab div a{
+  color: black;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+
+.ghana{
+  color: green;
+}
+
+
+.right-container{
+  display: flex;
+  align-items: center;
+}
+
+.open{
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(0, 139, 0);
+  padding: 4px;
+  color: rgb(0, 160, 27);
+  margin-right: 20px;
+}
+
+.login{
+  background-color: rgb(0, 102, 14);
+  border: none;
+  padding: 4px 20px;
+  color: rgb(255, 255, 255);
+  margin-right: 20px;
+}
+
+
+
+
+
+.image-tabs{
+  background-color: #f5f7f8;
+  padding: 20px;
+}
+
+.image-tabs h1{
+  font-size: 30px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+.imagetabs-content{
+  display: flex;
+  gap:20px;
+  padding-top: 20px;
+}
+
+@media screen and (max-width:992px) {
+  .imagetabs-content {
+    flex-direction: column;
+  }
+
+  .tab1{
+    width: 100%;
+    border-bottom: 1px solid #f1f1f1;
+  }
+
+    .tab1 img{
+      width: 100%;
+    }
+}
+
+.tab1{
+  display: flex;
+  background-color: white;
+}
+
+.tab1 h3{
+  font-size: 18px;
+
+}
+
+
+.tab1 p{
+  font-size: 13px;
+}
+
+.imagetabs-content2{
+  padding: 10px;
+}
+
+
+
+.imagetabs-contentnew{
+  background-color: #f5f7f8;
+}
+
+@media screen and (max-width:992px) {
+  .imagetabs-contentnew {
+ width: 100%;
+ overflow-x: scroll;
+}
+  }
+
+.imagetabs-contentnew h1{
+  font-size: 30px;
+  font-weight: 200;
+  padding-top: 20px;
+}
+
+
+.imagetabs-contentnew{
+  display: flex;
+  gap:20px;
+  padding-top: 20px;
+}
+
+.tab2{
+width: 300px;
+background-color: white;
+}
+
+@media screen and ( max-width:992px){
+  .tab2{
+    width: 400px;
+  }
+}
+
+.tab2 h3{
+  font-size: 18px;
+
+}
+
+
+.tab2 p{
+  font-size: 13px;
+}
+
+.tab2 img{
+  width: 100%;
+}
+
+@media screen and ( max-width:992px){
+  .tab2 img{
+    width: 300px;
+  }
+}
+
+
+
+
+.lastimages{
+  display: flex;
+}
+
+@media screen and ( max-width:992px){
+  .lastimages{
+flex-direction: column;
+  }
+}
+
+.lastimages-left{
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(000, 19, 93, 0.73)),
+    url("pics/tab13.webp");
+  height: 300px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  color: white;
+
+}
+
+@media screen and ( max-width:992px){
+.lastimages-left{
+width: 100%;
+  }
+}
+
+.lastimages-left div{
+  position: absolute;
+  top: 100px;
+}
+
+.lastimages-left div button{
+  border: 1px solid white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: transparent;
+  margin-top: 30px;
+}
+.lastimages-left div button a{
+  color: white;
+  text-decoration: none;
+}
+
+.lastimages-left div button:hover{
+  background-color: green;
+  transition: 1s;
+}
+
+.lastimages-right{
+  background-image: linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(000, 19, 93, 0.73)),
+    url("pics/tab14.jpg");
+  height: 300px;
+  width: 700px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding: 20px;
+  color: white;
+
+}
+
+@media screen and ( max-width:992px){
+.lastimages-right{
+width: 100%;
+  }
+}
+
+.lastimages-right div{
+  position: absolute;
+  top: 100px;
+}
+
+
+.lastimages-right div button{
+  border: 1px solid white;
+  padding: 10px 16px;
+  border-radius: 50px;
+  background: transparent;
+  margin-top: 30px;
+}
+.lastimages-right div button a{
+  color: white;
+  text-decoration: none;
+}
+
+.lastimages-right div button:hover{
+  background-color: green;
+  transition: 1s;
+}
+
+.notice{
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 20px;
+
+}
+
+@media screen and ( max-width:700px){
+.notice{
+flex-direction: column;
+align-items: flex-start;
+  }
+}
+
+.not-left h3{
+  color: blue;
+  font-weight: 200;
+  font-size: 30px;
+  padding-top: 30px;
+}
+
+.not-left a{
+  color: black;
+  text-decoration: none;
+}
+
+.footer{
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  padding: 30px 0px;
+}
+
+@media screen and ( max-width:992px){
+.footer{
+flex-direction: column;
+align-items: flex-start;
+
+  }
+}
+
+
+.footer ul{
+  list-style-type: none;
+}
+
+.footer ul li{
+  padding: 5px;
+}
+
+.footer ul li a{
+  color: gray;
+  font-size: 13px;
+  text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* the styling for the bootstrap nav section starts here */
+
+.mybuttons button{
+  background-color: green;
+  border: none;
+  padding: 5px 20px;margin-right: 10px;
+}
+
+.mybuttons button a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+#navboot{
+  display: none;
+}
+
+@media screen and (max-width:1200px){
+  #navboot{
+    display: block;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    top: 0;
+  }
+}
+
+@media screen and (max-width:700px){
+  .loginb{
+    display: none;
+  }
+}
